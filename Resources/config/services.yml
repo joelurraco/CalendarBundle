@@ -1,0 +1,11 @@
+services:
+    ju_calendar.helper.processor:
+        class: JoelUrraco\CalendarBundle\Helper\Processor
+
+    ju_calendar.twig.extension:
+        class: JoelUrraco\CalendarBundle\Twig\Extension\CalendarExtension
+        public: false
+        arguments:
+            - @ju_calendar.helper.processor
+        tags:
+            - { name: twig.extension }

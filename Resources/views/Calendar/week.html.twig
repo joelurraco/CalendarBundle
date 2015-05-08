@@ -1,0 +1,9 @@
+<tr class="calendar-row">
+	{% for day in week %}
+		{% if day.day != false %}
+			{% include 'JoelUrracoCalendarBundle:Calendar:day.html.twig' with {day: day.day, month: day.month, year: day.year} %}
+		{% else %}
+			{% include 'JoelUrracoCalendarBundle:Calendar:emptyDay.html.twig' %}
+		{% endif %}
+	{% endfor %}
+</tr>
