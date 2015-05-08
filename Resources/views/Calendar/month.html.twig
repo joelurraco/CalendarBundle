@@ -1,4 +1,6 @@
-{% include 'JoelUrracoCalendarBundle:Calendar:monthHeader.html.twig' %}
-{% for week in weeks %}
-	{% include 'JoelUrracoCalendarBundle:Calendar:week.html.twig' %}
-{% endfor %}
+<table>
+	{% include 'JoelUrracoCalendarBundle:Calendar:monthHeader.html.twig' %}
+	{% for week in weeks %}
+		{% include 'JoelUrracoCalendarBundle:Calendar:week.html.twig' %}
+	{% endfor %}
+</table>
