@@ -1,0 +1,30 @@
+{
+    "name" : "joelurraco/calendarbundle",
+    "description" : "A bundle for generating calendars",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Joel Urraco",
+        "email" : "joeluraco@gmail.com"
+    }],
+    "keywords" : [
+        "calendar"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+    },
+    "autoload" : {
+        "psr-0" : {
+            "JoelUrraco\\CalendarBundle" : ""
+        }
+    },
+    "target-dir" : "JoelUrraco/CalendarBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+    "branch-alias" : {
+            "dev-master" : "1.0-dev"
+        }
+    }
+}
